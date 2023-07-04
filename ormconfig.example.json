@@ -1,0 +1,13 @@
+{
+  "type": "postgres",
+  "port": 5432,
+  "host": "localhost",
+  "username": "xxxxx",
+  "password": "xxxxx",
+  "database": "xxxxx",
+  "migrations": ["./dist/db/migrations/*.js"],
+  "entities": ["./dist/**/*.js"],
+  "cli": {
+    "migrationsDir": "./dist/db/migrations"
+  }
+}

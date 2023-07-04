@@ -36,3 +36,4 @@ lerna-debug.log*
 
 .env
 nestjs-migrations-orm.pem
+ormconfig.json
