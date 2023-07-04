@@ -33,6 +33,13 @@ export class UsuarioController {
     return usuariosSalvos;
   }
 
+  @Get('/:email')
+  async buscaPorEmail(@Param('email') email: string) {
+    const usuariosSalvos = await this.usuarioService.buscaPorEmail(email);
+
+    return usuariosSalvos;
+  }
+
   @Put('/:id')
   async atualizaUsuario(
     @Param('id') id: string,
